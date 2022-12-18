@@ -3,7 +3,7 @@ extends layout
 block content
   ul#message-list
     each message in messages
-      li.message
+      li.message-entry
         h3.message-user= message.user + ":"
         p.message-content= message.text
         p.message-date= message.added
