@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  a(href="/new")
+    button#add-message(type="button") New message
   ul#message-list
     each message in messages
       li.message-entry
