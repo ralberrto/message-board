@@ -1,0 +1,14 @@
+extends layout
+
+block content 
+  h1 Post new message
+  form#new-message(action="/new", method="POST") 
+    div.form-field
+      label(for="user") Name
+      input#user(type="text", name="user", required)
+
+    div.form-field
+      label(for="message") Message
+      input#message(type="text", name="messageBody", required)
+
+    button(type="submit", form="new-message") Submit
